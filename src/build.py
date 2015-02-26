@@ -40,9 +40,8 @@ def render_rst(group):
 
     pprint.pprint(group)
 
-for fname in glob.glob('./*.yaml'):
-    with open(fname) as fp:
-        reader = codecs.getreader('utf8')(fp)
-        group = yaml.load(reader)
-        if 'activo' in group and group['activo']:
-            render_rst(group)
+with open("/dev/stdin") as fp:
+    reader = codecs.getreader('utf8')(fp)
+    group = yaml.load(reader)
+    if 'activo' in group and group['activo']:
+        render_rst(group)

@@ -1,0 +1,25 @@
+---
+nombre: LinuxCabal, A.C.
+activo: true
+comentario: Punto de encuentro para gente con intereses en FOSS.
+direccion:
+    ciudad: Guadalajara
+    estado: Jalisco
+contacto:
+    telefono: +52 (33) 3145-2638
+    e-mail: contacto@linuxcabal.org
+presencia:
+    github: https://github.com/LinuxCabal
+    google-groups:
+        - informacion: https://groups.google.com/forum/#!forum/linuxcabal
+          tema: General
+        - informacion: https://groups.google.com/forum/#!forum/arduinocabal
+          tema: Arduino
+        - informacion: https://groups.google.com/forum/#!forum/phpcabal
+          tema: PHP
+        - informacion: https://groups.google.com/forum/#!forum/pythoncabal
+          tema: Python
+        - informacion: https://groups.google.com/forum/#!forum/wars-n-flames-cabal
+          tema: Wars N' Flames
+    web: http://linuxcabal.org/
+    wiki: http://wiki.cabal.mx/

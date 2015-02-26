@@ -1,0 +1,30 @@
+---
+nombre: Grupo de Usuarios de Linux en Tijuana
+activo: true
+acronimo: gultij
+comentario:
+direccion:
+    ciudad: Tijuana
+    estado: Baja California
+contacto:
+    e-mail: contacto@gultij.org
+presencia:
+    facebook: https://www.facebook.com/groups/gultij
+    github: https://github.com/gultij
+    google-groups:
+        - informacion: https://groups.google.com/forum/#!forum/gultij-anuncios
+          tema: Anuncios
+        - informacion: https://groups.google.com/forum/#!forum/gultij
+          e-mail: gultij@googlegroups.com
+          tema: General
+    google-plus: https://plus.google.com/communities/102802385657041516164
+    irc: irc://freenode.net/#gultij
+    planeta: http://planet.gultij.org/
+    podcast:
+        - nombre: OpenCharla
+          activo: false
+          formatos:
+              - mp3: http://opencharla.gultij.org/mp3
+              - vorbis: http://opencharla.gultij.org/ogg
+    twitter: https://twitter.com/gultij
+    web: http://gultij.org/

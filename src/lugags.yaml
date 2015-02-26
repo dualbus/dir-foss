@@ -1,0 +1,18 @@
+---
+nombre: Linux User Group Aguascalientes
+activo: true
+acronimo: lugags
+comentario: Nace como parte del Hackerspace de The Inventor's House.
+direccion:
+    ciudad: Aguascalientes
+    estado: Aguascalientes
+presencia:
+    facebook: https://www.facebook.com/LUGAgs
+    twitter: https://twitter.com/LUG_Ags
+    web: http://theinventorhouse.org/acercade.html
+adicional: |
+    Histórico
+    ---------
+    
+    - Pingüinos en el Alambre era el anterior GUL en Aguascalientes, pero
+      actualmente se encuentra inactivo (http://pinguinos.org.mx).

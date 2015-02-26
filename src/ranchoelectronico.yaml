@@ -1,0 +1,32 @@
+---
+nombre: Rancho Electrónico
+activo: true
+comentario: >
+    Hackerspace libre, autogestivo independiente y colectivo, dedicado a
+    temas de hacktivismo, software libre, seguridad informática,
+    conciencia social y más.
+direccion:
+    calle: Fray Juan de Torquemada
+    numero: 76
+    colonia: Obrera
+    ciudad: México DF
+    estado:
+    comentario: Metro Chabacano
+contacto:
+    e-mail: ranchoelectronico@riseup.net
+presencia:
+    anillosur: https://red.anillosur.net/g/ranchoelectronico
+    diaspora: https://diasp.org/u/rancho_electronico
+    lista-de-correo:
+        - informacion: http://listas.espora.org/mailman/listinfo/hackerspace-df
+          tema: Hackerspace
+        - informacion: http://listas.espora.org/mailman/listinfo/ebiblio-rancho
+          tema: Biblioteca electrónica
+        - informacion: http://listas.espora.org/mailman/listinfo/mapasrancheros
+          tema: Mapas Rancherxs
+        - informacion: http://listas.espora.org/mailman/listinfo/hackmitin
+          tema: Hackmitin
+        - informacion: http://listas.espora.org/mailman/listinfo/audiovisual-libre
+          tema: Audiovisual libre
+    twitter: https://twitter.com/hackrancho
+    web: http://ranchoelectronico.org/

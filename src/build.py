@@ -3,7 +3,6 @@
 
 import codecs
 import glob
-import pprint
 import sys
 import textwrap
 import yaml
@@ -11,6 +10,27 @@ sys.stdout = codecs.getwriter('utf8')(sys.stdout)
 
 def U(k,h):
     return k in h and h[k] and h[k] is not None
+def Ptree(t, indent=4):
+    def C(x):
+        return isinstance(x, dict) or isinstance(x, list)
+
+    if isinstance(t, dict):
+        items = sorted(t.iteritems())
+    elif isinstance(t, list):
+        items = enumerate(t)
+    else:
+        raise Exception
+
+    for k, v in items:
+        if v is None:
+            print '%s* %s:' % (' '*indent, k)
+        elif isinstance(v, bool):
+            print '%s* %s: %s' % (' '*indent, k, [u'sí', 'no'][v])
+        elif C(v):
+            print '%s* %s:' % (' '*indent, k)
+            Ptree(v, indent+4)
+        else:
+            print '%s* %s: %s' % (' '*indent, k, v)
 
 def render_rst(group):
     print group['nombre']
@@ -22,23 +42,20 @@ def render_rst(group):
         print
         print u"Dirección"
         print "---------"
-        pprint.pprint(group['direccion'])
+        print
+        Ptree(group['direccion'])
     if U('contacto', group):
         print
         print "Contacto"
         print "--------"
         print
-        for k, v in sorted(group['contacto'].iteritems()):
-            print "    * %s: %s" % (k, v)
+        Ptree(group['contacto'])
     if U('presencia', group):
         print
         print "Presencia"
         print "---------"
         print
-        for k, v in sorted(group['presencia'].iteritems()):
-            print "    * %s: %s" % (k, v)
-
-    pprint.pprint(group)
+        Ptree(group['presencia'])
 
 with open("/dev/stdin") as fp:
     reader = codecs.getreader('utf8')(fp)
